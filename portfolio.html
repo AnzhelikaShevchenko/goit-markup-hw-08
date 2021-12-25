@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class=" header__container container">
             <nav class="navigation">
-                <a href="./index.html" class="link list logo navigation__logo" lang="en">
+                <a href="./index.html" class="link list logo" lang="en">
                     <span class="logo__accent">Web</span>Studio</a>
                 <ul class="list pagination">
                     <li class="pagination__item">
@@ -43,8 +43,69 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mob-menu__btn mob-menu__btn--position" data-menu-open>
+                <svg class="btn-icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu__top">
+            <button type="button" class="mob-menu__btn mob-menu__btn--close" data-menu-close>
+                <svg class="btn-icon" width="19" height="19">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="list mob-menu__list">
+                <li class="mob-menu__item">
+                    <a href="./index.html" class="link mob-menu__link">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="./portfolio.html" class="link mob-menu__link">Портфолио</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="" class="link mob-menu__link">Контакты</a>
+                </li>
+            </ul>
+            </div>
+            <div class="mob-menu__bottom">
+            <ul class="list mob-menu__connection-list">
+                <li class="mob-menu__connection-item">
+                    <a class="link mob-menu__connection-link" href="mailto:info@devstudio.com">
+                        <svg class="connection__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="mob-menu-connection__item">
+                    <a class="link mob-menu__connection-link" href="tel:+380961111111">
+                        <svg class="connection__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <div class="mob-menu__social">
+                <ul class="list mob-menu__social-list">
+                    <li class="mob-menu__social-item">
+                        <a href="" class="link mob-menu__social-link">
+                            Instagram</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="" class="link mob-menu__social-link">
+                            Twitter</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="" class="link mob-menu__social-link">
+                            Facebook</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="" class="link mob-menu__social-link">
+                            LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="section">
             <div class="container">
@@ -386,7 +447,8 @@
             </div>
         </section>
     </main>
-    <footer class="footer section container footer-container">
+    <footer class="footer section ">
+        <div class="container footer-container">
         <div class="footer-tablet">
         <div class="address">
             <a href="./index.html"  class="link list logo logo--white" lang="en">
@@ -457,7 +519,7 @@
                 </button>
                 </div>
             </div>
-    
+        </div>
 </footer>
 <script src="./menu.js"></script>
 </body>

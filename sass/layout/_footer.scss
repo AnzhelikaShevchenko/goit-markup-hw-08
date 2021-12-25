@@ -6,24 +6,27 @@
     @media screen and(min-width:768px) {
         display: flex;
         align-items: baseline;
+        justify-content: space-around;
+    }
+    
+    @media screen and(min-width:1200px) {
+        justify-content: space-between;
     }
 }
 .footer-container{
     @media screen and(min-width:1200px) {
         display: flex;
         align-items: baseline;
+        justify-content: space-between;
     }
 }
 
 .address{
     text-align: center;
 
-    @media screen and(min-width:768px) and(max-width:1199px){
-        margin-left: 76px;
-    }
-
     @media screen and(min-width:1200px){
         text-align: left;
+        margin-right: 70px;
     }
 }
 
@@ -67,17 +70,17 @@
 
 /*-----------------FOOTER SOCIAL-------------------*/
 .social-join{
+    @media screen and(min-width:480px) and(max-width:767px){
     margin-top: 60px;
+    }
+
         @media screen and(min-width:768px){
             display: flex;
             flex-direction: column;
-            margin-left: 165px;
-            margin-top: 5px;
         }
 
         @media screen and(min-width:1200px){
-            margin-top: 12px;
-            margin-left: 70px;
+            align-items: baseline;
         }
 }
 
@@ -107,11 +110,11 @@
 }
 
 .social-subscription{
+    @media screen and(min-width:480px) and(max-width:1199.5px){
         margin-top: 60px;
+        }
 
         @media screen and(min-width: 1200px){
-            margin-top: 12px;
-            margin-left: 93px;
             text-align-last: left;
         }
 }
